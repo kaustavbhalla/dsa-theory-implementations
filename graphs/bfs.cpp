@@ -48,3 +48,16 @@ void bfs(int v, vector<bool> &visited) {
     }
   }
 }
+
+int main() {
+  vector<bool> visited(MAXI, false);
+  addEdge(1, 2);
+  addEdge(2, 3);
+  addEdge(3, 4);
+  addEdge(4, 1);
+  addEdge(1, 3);
+
+  printf("BFS Traversal starting from node 1: ");
+  bfs(1, visited);
+  printf("\n");
+}

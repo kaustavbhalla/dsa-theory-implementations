@@ -51,12 +51,12 @@ int main() {
   n = 6;
   memset(adj, 0, sizeof(adj));
 
-  addEdge(0, 1);
-  addEdge(0, 2);
+  addEdge(1, 2);
+  addEdge(2, 3);
+  addEdge(3, 4);
+  addEdge(4, 1);
   addEdge(1, 3);
-  addEdge(1, 4);
-  addEdge(2, 5);
 
   printf("Recursive DFS from 0: ");
-  dfs(0);
+  dfs(1);
 }
